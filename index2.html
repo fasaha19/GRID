@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Ventures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animate/animate.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<script type="text/javascript" src="assets/js/waypoints/jquery.waypoints.js"></script>
+	<script type="text/javascript" src="assets/js/waypoints/waypoint.js"></script>
+	<!-- CSS only -->
+
+
+</head>
+<body >
+
+
+
+	<section>
+		
+	</section>
+
+
+	<section  >
+
+					
+				
+		
+	
+				<svg class="intro" viewbox="0 0 200 86" style="z-index: 200;" >
+				  <text text-anchor="start" x="40" y="20" class="text text-stroke" clip-path="url(#text1)">GRID VENTURE</text>
+
+
+				  <text text-anchor="start" x="40" y="20" class="text text-stroke text-stroke-2" clip-path="url(#text1)">GRID VENTURE</text>
+
+
+				  <defs>
+				    <clipPath id="text1">
+				      <text text-anchor="start" x="40" y="20" class="text">GRID VENTURE</text>
+				    </clipPath>
+				 	
+				  </defs>
+				</svg>
+
+				<div class="row main_logo" >
+					<div class="col-12 text-center ">
+
+						<img src="assets/images/Grid.png" class=" animate__animated animate__fadeIn  animate__delay-1s img-fluid  logo_vert_cent " alt="h" height="185" width="250">
+					</div>
+				</div>
+
+				
+			
+	</section>
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/s1.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/s2.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/s3.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	
+
+
+	<!-- JS, Popper.js, and jQuery -->
+<script type="text/javascript">
+	$(function() {
+  $('.intro').addClass('go');
+
+  $('.reload').click(function() {
+    $('.intro').removeClass('go').delay(200).queue(function(next) {
+      $('.intro').addClass('go');
+      next();
+    });
+
+  });
+})
+</script>
+
+</body>
+</html>

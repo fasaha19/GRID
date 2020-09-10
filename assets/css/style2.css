@@ -1,0 +1,151 @@
+html,body{
+	cursor: url('../images/black_GV_cursor.png'),auto;
+	height: 100%;
+	width: 100%;
+
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo_vert_cent{
+
+	margin-top: 10%;
+
+}
+
+.main_logo{
+	position: absolute;
+    right: 15%;
+    bottom: 35%	;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 33%;
+  height: 10px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+ol.carousel-indicators li.active {
+  background: yellow;
+}
+
+
+
+
+
+/*grid text logo*/
+
+svg.intro {
+  background: transparent;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+
+}
+svg.intro .text {
+  display: none;
+}
+svg.intro.go .text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+svg.intro.go .text-stroke {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2.8px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  -webkit-animation: dash 2.5s ease-in-out forwards;
+          animation: dash 2.5s ease-in-out forwards;
+}
+svg.intro.go .text-stroke:nth-child(2) {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+svg.intro.go .text-stroke:nth-child(3) {
+  -webkit-animation-delay: .14s;
+          animation-delay: .14s;
+}
+svg.intro.go .text-stroke-2 {
+  stroke: #000000;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+svg.intro.go .text-stroke:nth-child(5) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+svg.intro.go .text-stroke:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+

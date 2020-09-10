@@ -1,0 +1,437 @@
+html,body{
+	cursor: url('../images/GV_cursor.png'),auto;
+	height: 100%
+	width: 100%;
+ background: rgb(25, 25, 25);
+
+}
+
+#section1{
+  cursor: url('../images/black_GV_cursor.png'),auto;
+}
+
+.menus{
+
+   color: white;
+   font-size: 34px;
+   line-height: 5rem;     
+}
+
+
+
+
+.sidebar_style{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: url('../images/black_GV_cursor.png'),auto;; /* Add a pointer on hover */
+
+}
+
+
+.shad{
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(112,112,112,0.49);
+-moz-box-shadow: 0px 5px 10px 0px rgba(112,112,112,0.49);
+box-shadow: 0px 5px 10px 0px rgba(112,112,112,0.49);
+}
+
+
+
+
+a {
+
+  position: relative;
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 800;
+  color: white;
+  text-align: center !important;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+    background-position: 0 100%;
+  }
+}
+
+a:hover{
+  text-align: center !important;
+  font-size: 5rem;
+    overflow: hidden;
+  background: linear-gradient(to right, black, white 50%, grey 50%, #f2f2f2, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.5s ease;
+
+}
+
+.main_grid_cont{
+margin-top: -100% !important;
+
+font-size: 5rem;
+color: white;
+}
+
+.font{
+	font-family: 'Alata', sans-serif;
+}
+
+.black_trap {
+	border-top: 47.7rem solid black;
+	border-left: 0 solid transparent;
+	border-right: 21rem solid transparent;
+	height: 0;
+	width: 152%;
+}
+
+
+
+.logo_vert_cent{
+	position: absolute;
+	margin-top: 40%;
+
+}
+.overflow-x{
+    overflow-x: hidden;
+}
+
+.btn-row{
+	z-index: 10;
+	position: absolute;
+	top: 3%;
+	right: 2%;
+	background: transparent;
+	border:0;
+	font-size: 2rem;
+
+
+}
+
+/*sidebutton*/
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+/* Effect 1 */
+ .hovicon.effect-1 {
+    background: none;
+    -webkit-transition: background 0.2s, color 0.2s;
+    -moz-transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s;
+}
+.hovicon.effect-1:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px #000000;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transition: transform 0.2s, opacity 0.2s;
+    transform: scale(.8);
+    opacity: 0;
+}
+
+/* Effect 1b */
+ .hovicon.effect-1.sub-b:hover {
+    background: none;
+    color: #000000;
+}
+.hovicon.effect-1.sub-b:hover i {
+    color: #000000;
+}
+.hovicon.effect-1.sub-b:after {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.hovicon.effect-1.sub-b:hover:after {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.grey_trap{
+
+	border-bottom: 47.7rem solid grey;
+	border-right: 0 solid transparent;
+	border-left: 21rem solid transparent;
+	height: 0;
+	width: 100%;
+}
+
+nav{
+	z-index: 10;
+}
+
+
+/*cards*/
+.card {
+  width: 90%;
+  height: 370px;
+  margin: 1em;
+  perspective: 1500px;
+  border-color: white;
+
+}
+.card .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.more {
+  display: none;
+}
+.more:checked ~ .content {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+}
+.front .inner,
+.back .inner {
+  height: 100%;
+  display: grid;
+  padding: 1.5em;
+  transform: translateZ(80px) scale(0.94);
+}
+
+.front {
+  background-color: #fff;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.front:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  /*background: linear-gradient(40deg, rgba(67, 138, 243, 0.7), rgba(255, 242, 166, 0.7));*/
+    background: linear-gradient(331deg, #ffffff, #5b5959,#ffffff ,#ffffff);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 28s ease infinite;
+    animation: AnimationName 28s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+.front .inner {
+  grid-template-rows: 5fr 1fr 1fr 2fr 1fr;
+  justify-items: center;
+}
+.front h2 {
+  grid-row: 2;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+.front .rating {
+  grid-row: 3;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.front .rating i {
+  margin: 0 1px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  border: 2px solid #f0f0f0;
+}
+.back .inner {
+  grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 0.8em;
+  justify-items: center;
+}
+.back .info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  grid-row: 3;
+}
+.back .info:not(:first-of-type):before {
+  content: '';
+  position: absolute;
+  left: -0.9em;
+  height: 18px;
+  width: 1px;
+  background-color: #ccc;
+}
+.back .info span {
+  font-size: 2em;
+  font-weight: 700;
+}
+.back .info i {
+  font-size: 1.2em;
+}
+.back .info i:before {
+  background: linear-gradient(40deg, #000000, #438af3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.back .info .icon {
+  margin-left: 0.3em;
+}
+.back .info .icon span {
+  display: block;
+  margin-top: -0.25em;
+  font-size: 0.8em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.back .description {
+  grid-row: 5;
+  grid-column: 1/-1;
+  font-size: 0.86em;
+  border-radius: 5px;
+  font-weight: 600;
+  line-height: 1.4em;
+  overflow: auto;
+  color: #000000;
+  padding-right: 10px;
+}
+.back .location,
+.back .price {
+  font-weight: 600;
+  color: #000000;
+  grid-row: 1;
+  font-size: 0.86em;
+}
+.back .location {
+  grid-column: 1/3;
+  justify-self: left;
+}
+.back .price {
+  grid-column: 3/-1;
+  justify-self: right;
+}
+.back .button {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.button {
+  grid-row: -1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: url('../images/black_GV_cursor.png'),auto;;
+  display: block;
+  padding: 0 1.5em;
+  height: 3em;
+  line-height: 2.9em;
+  min-width: 3em;
+  background-color: transparent;
+  border: solid 2px #fff;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  left: 50%;
+  backface-visibility: hidden;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.button:hover {
+  background-color: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
+  color: #000000;
+}
+
+
+.button.return {
+  line-height: 3em;
+  color: #000000;
+  border-color: #000000;
+  text-shadow: none;
+}
+.button.return:hover {
+  background-color: #000000;
+  color: #fff;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: #000000;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #859ddf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+
+
