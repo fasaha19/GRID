@@ -1,0 +1,29 @@
+
+
+  .card {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+    font-size: 18px;
+  }
+  .one{
+    color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: ghostwhite;
+  }
+
+  .card:hover::after{
+opacity: 1;
+}
+

@@ -23,7 +23,12 @@ body {
     margin: 8px;
   }
   
- 
+ .na{
+     font-size: 20px;
+ }
+ .tilte{
+     font-size: 18px;
+ }
 
   .container {
     padding: 0 16px;
