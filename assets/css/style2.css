@@ -194,8 +194,8 @@ svg.intro.go .text-stroke:nth-child(6) {
   margin-right: 7px;
   margin-left: 7px;
   margin-bottom: 8px;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border: 3px solid white;
   line-height: 15px;
   color: white;
@@ -212,11 +212,11 @@ svg.intro.go .text-stroke:nth-child(6) {
   margin-right: 7px;
   margin-left: 7px;
   margin-bottom: 8px;
-  width: 15px;
-  height: 15px;
-   border: 3px solid #707070;
-   color: #707070;
-  background: transparent;
+  width: 35px;
+  height: 35px;
+   border: 3px solid #050404;
+   color: #f3f3f3;
+ 
 }
 
 span.num{
