@@ -174,5 +174,57 @@ svg.intro.go .text-stroke:nth-child(6) {
 }
 
 
+/*.carousel-indicators-numbers li {
+  text-indent: 35%;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color: #999;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}*/
+.carousel-indicators-numbers li {
+  text-indent: 25%;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 8px;
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  line-height: 15px;
+  color: white;
+  transform: rotate(45deg); 
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  background: transparent;
+
+
+}
+.carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-bottom: 8px;
+  width: 15px;
+  height: 15px;
+   border: 3px solid #707070;
+   color: #707070;
+  background: transparent;
+}
+
+span.num{
+
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: block;
+    position: relative;
+}
 
 
