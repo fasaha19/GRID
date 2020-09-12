@@ -1,7 +1,8 @@
 html,body{
-	cursor: url('../images/black_GV_cursor.png'),auto;
+
 	height: 100%;
-	width: 100%;
+  width: 100%;
+ 
 
 }
 .carousel-item {
@@ -44,10 +45,86 @@ nav {
   transition: all 300ms ease-in-out;
 }
 
-li a:hover, .dropdown:hover  .dropdown-item {
-  background-color: rgb(238, 231, 231);
-}
+    @media (min-width: 320px){
 
+      ul.carousel-indicators-numbers{
+        margin-bottom: 410px !important;
+      }
+          
+
+    }
+    @media (min-width: 375px){
+
+      ul.carousel-indicators-numbers{
+        margin-bottom: 370px !important;
+      }
+          
+
+    }
+     @media (min-width: 420px){
+
+      ul.carousel-indicators-numbers{
+        margin-bottom: 335px !important;
+      }
+          
+
+    }
+    @media (min-width: 576px){
+
+      ul.carousel-indicators-numbers{
+        margin-bottom: 100px !important;
+      }
+          
+
+    }
+    @media (min-width: 765px){
+      ul.carousel-indicators-numbers{
+        margin-bottom: 150px !important;
+      }
+          
+
+    }
+    @media(min-width: 1024px){
+      ul.carousel-indicators-numbers{
+        margin-bottom: 30px !important;
+      }
+          
+
+    }
+      @media(min-width: 1440px){
+      ul.carousel-indicators-numbers{
+        margin-bottom: 50px !important;
+      }
+          
+
+    }
+
+    .dropdown-menu{
+      border: none;
+    }
+
+   
+
+    .animate{
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -ms-transition: all .3s;
+      transition: all .3s;  
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden; /* Chrome and Safari */
+      -moz-backface-visibility:hidden; /* Firefox */
+      -ms-backface-visibility:hidden; /* Internet Explorer */
+   
+    }
+
+
+li .vv  a:hover, .dropdown:hover  .dropdown-item {
+ color: #B2B2B2;
+}
+ li.vv a:hover, .dropdown:hover  .dropdown-item {
+  color: #707070;
+}
 .main_logo{
 	position: absolute;
     right: 15%;
@@ -193,9 +270,9 @@ svg.intro.go .text-stroke:nth-child(6) {
   font-weight: bold;
   margin-right: 7px;
   margin-left: 7px;
-  margin-bottom: 8px;
-  width: 25px;
-  height: 25px;
+  margin-bottom: 25px;
+  width: 15px;
+  height: 15px;
   border: 3px solid white;
   line-height: 15px;
   color: white;
@@ -206,14 +283,21 @@ svg.intro.go .text-stroke:nth-child(6) {
 
 
 }
+/* nav div ul li{
+  margin-right: 20px;
+  margin-left: 20px;
+
+} */
+
+
 .carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
   font-size: 12px;
   font-weight: bold;
   margin-right: 7px;
   margin-left: 7px;
   margin-bottom: 8px;
-  width: 35px;
-  height: 35px;
+  width: 18px;
+  height: 18px;
    border: 3px solid #050404;
    color: #f3f3f3;
  
