@@ -5,10 +5,12 @@ html,body{
  
 
 }
+
 .carousel-item {
   height: 100vh;
   min-height: 350px;
-  background: no-repeat center center scroll;
+  background: no-repeat;
+  background-position: center 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,10 +47,34 @@ nav {
   transition: all 300ms ease-in-out;
 }
 
+.navbar-collapse {
+  width: 100%;
+ 
+  
+}
+ /* .nav-item a{
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center;
+} */
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
     @media (min-width: 320px){
 
       ul.carousel-indicators-numbers{
-        margin-bottom: 410px !important;
+        margin-bottom: 260px !important;
       }
           
 
@@ -56,7 +82,7 @@ nav {
     @media (min-width: 375px){
 
       ul.carousel-indicators-numbers{
-        margin-bottom: 370px !important;
+        margin-bottom: 225px !important;
       }
           
 
@@ -64,7 +90,7 @@ nav {
      @media (min-width: 420px){
 
       ul.carousel-indicators-numbers{
-        margin-bottom: 335px !important;
+        margin-bottom: 190px !important;
       }
           
 
@@ -79,21 +105,21 @@ nav {
     }
     @media (min-width: 765px){
       ul.carousel-indicators-numbers{
-        margin-bottom: 150px !important;
+        margin-bottom: 10px !important;
       }
           
 
     }
-    @media(min-width: 1024px){
+    @media(min-width: 1020px){
       ul.carousel-indicators-numbers{
-        margin-bottom: 30px !important;
+        margin-bottom: 10px !important;
       }
           
 
     }
       @media(min-width: 1440px){
       ul.carousel-indicators-numbers{
-        margin-bottom: 50px !important;
+        margin-bottom: 10px !important;
       }
           
 
@@ -311,4 +337,44 @@ span.num{
     position: relative;
 }
 
+#banner {
+  margin-bottom: 50px;
+	overflow: hidden;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	clear: both;
+	background:  url('assets/images/back1.jpg') center center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/images/back1.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/images/back1.jpg',sizingMethod='scale')";
+}
 
+.wrap-center{
+	margin: 0 auto;
+	position: relative;
+	max-width: 73.231em;
+}
+
+.banner-centered {
+	text-align: center;
+	position: absolute;
+	display: block;
+	max-width: 75.231em;
+	height: inherit;
+	overflow: hidden;
+	margin-top: 100px;
+}
+
+.banner-centered h2 {
+	font-size: 5.385em;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #fafafa;
+	font-weight: 100;
+	display: block;
+}
